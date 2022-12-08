@@ -1,0 +1,140 @@
+header{
+    border: red 1px solid;
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.logo{
+    width: 15%;
+    height: 150 px;
+    border: red 1px solid;
+}
+.menu{
+    width: 100%;
+    height: auto;
+    border: red 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.opciones{
+    display: flex;
+    width: 100%;
+    border:red 1px solid ;
+}
+.usuario{
+    display: flex;
+    width: 20%;
+    height: auto;
+    border: red 1px solid;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.opc_user{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenido{
+    width: 80%;
+    height: auto;
+    border: red 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.estados{
+    width: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.est{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.est div{
+    padding-right: 20px;
+}
+.est div label{
+    display: flex;
+    font-size: 15px;
+}
+.est div select{
+    margin: 3px;
+    padding: 3px;
+    border-radius: 8px;
+}
+.est div option{
+    padding: 2px;
+}
+.ident{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: baseline;
+}
+.ident_selet{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: baseline;
+    padding: 10px;
+    padding-right: 34px;
+    padding-top: 15px;
+}
+.ident_selet >label{
+    padding-bottom: 5px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.ident_selet > select{
+    margin-left: 20px;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 8px;
+}
+.info_basic{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.nomb, .apell{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    padding-right: 50px;
+}
+.info_basic >div> input{
+    width: 400px;
+}
+.info_ubi{
+    display: flex;
+}
+input{
+    width: 150px;
+    height: 20px;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 3px;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px double;
+}
+input:focus{
+    border-color: blue;
+}
+footer{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    border: red 1px solid;
+}
+td{
+    border: 1px solid black;
+}
