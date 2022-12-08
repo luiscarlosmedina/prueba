@@ -38,6 +38,9 @@
                         <select required>
                             <option>Activo</option>
                             <option>Desactivo</option>
+                            <option>Disponible</option>                       
+                            <option>Incapacitado</option>
+                            <option>Suspendido</option>
                         </select>
                     </div>
                     <div>
@@ -46,14 +49,6 @@
                             <option>Motorizado</option>                       
                             <option>Administrador</option>
                             <option>Radio Operador</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>Estado de rol</label>
-                        <select required>
-                            <option>Disponible</option>                       
-                            <option>Incapacitado</option>
-                            <option>Suspendido</option>
                         </select>
                     </div>
                 </div>
@@ -69,7 +64,8 @@
                     <div class="ident_num">
                         <input type="number" placeholder="Ingrese #Documento"required>
                     </div>
-                </Div>    
+                </Div>
+                
             </div>
             <div class="info_basic">
                 <div class="nomb">
@@ -84,7 +80,7 @@
             <div class="info_ubi">
                 <div class="resid">
                     <div>
-                        <label>Barrio de reidencia</label>
+                        <label>Barrio </label>
                         <select required>
                             <option>Samper Mendoza</option>
                             <option>Egipto</option>
@@ -98,17 +94,34 @@
                 </div>
                 <div class="cont">                
                     <div class="Celular">
-                        <label>ingrese telefono celular</label>
+                        <label>Ingrese telefono celular</label>
                         <input type="tel" required placeholder="Ingrese Celular " pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
                     </div>
                     <div class="fijo">
-                        <label>ingrese telefono fijo</label>
+                        <label>Ingrese telefono fijo</label>
                         <input type="tel" placeholder="Ingrese Telefono " pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="7">
                     </div>
                 </div>
             </div>
-
-            <div class="prestaciones">
+            <div class="data_import">
+                <div class="lib_mil">
+                    <label>Tipo de libreta militar</label>
+                    <select required>
+                        <option>No registra</option>
+                        <option>Primera clase</option>
+                        <option>Segunda clase</option>
+                    </select>
+                </div>
+                <div class="lic_cond">
+                    <label>Tipo licencia de conduccion</label>
+                    <select required>
+                        <option>No registra</option>
+                        <option>A1 </option>
+                        <option>A2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="prestacion">
                 <div class="salud">
                     <label>EPS</label>
                     <select required>
@@ -134,7 +147,7 @@
                     </select>
                 </div>
                 <div class="ARL">
-                    <label>Aseguradora de Riesgo</label>
+                    <label>ARL</label>
                     <select required>
                         <option>Sura</option>
                         <option>Mundial de seguros</option>
@@ -142,25 +155,15 @@
                     </select>
                 </div>
             </div>
-            <div class="lib_mil">
-                <label>tipo de libreta militar</label>
-                <select required>
-                    <option>Seleccione</option>
-                    <option>Primera clase</option>
-                    <option>Segunda clase</option>
-                </select>
-            </div>
-            <div>
-                <label>licencia de conduccion</label>
-                <select required>
-                    <option>No registra</option>
-                    <option>A1 </option>
-                    <option>A2</option>
-                </select>
-            </div>
             <div class="identificacion">
-                <input type="email" required placeholder="Ingrese Correo">
-                <input type="password" required placeholder="Ingrese Contrseña">   
+                <div class="email">
+                    <label>Email</label>
+                    <input type="email" required placeholder="Ingrese Correo">   
+                </div>
+                <div class="paswd">
+                    <label>Contraseña</label>
+                    <input type="password" required placeholder="Ingrese Contrseña">    
+                </div>
             </div> 
             <label>Carge foto</label>            
             <input type="file" value="Carge foto">

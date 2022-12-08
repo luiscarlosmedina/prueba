@@ -63,11 +63,6 @@ header{
     display: flex;
     font-size: 15px;
 }
-.est div select{
-    margin: 3px;
-    padding: 3px;
-    border-radius: 8px;
-}
 .est div option{
     padding: 2px;
 }
@@ -91,12 +86,6 @@ header{
     padding-right: 10px;
     font-size: 12px;
 }
-.ident_selet > select{
-    margin-left: 20px;
-    margin: 3px;
-    padding: 3px;
-    border-radius: 8px;
-}
 .info_basic{
     display: flex;
     flex-wrap: wrap;
@@ -110,10 +99,62 @@ header{
     padding-right: 50px;
 }
 .info_basic >div> input{
-    width: 400px;
+    width: 350px;
 }
 .info_ubi{
     display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.resid{
+    padding-right: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.resid > div > label{
+    padding-right: 20px;
+}
+.resid > div > select{
+    margin-left: 16px;
+    width: 250px;
+}
+.resid > div > input{
+    width: 250px;
+}
+.cont{
+    display: flex;
+}
+.cont > div{
+    display: flex;
+    flex-direction: column;
+}
+.data_import{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding: 10px;
+}
+.lib_mil , .lic_cond{
+    display: flex;
+    flex-direction: column;
+    padding-right: 90px;
+}
+.prestacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 40px;
+}
+.prestacion>div{
+    display: flex;
+    flex-direction: column;
+}
+select{
+    margin: 3px;
+    padding: 3px;
+    border-radius: 8px;
 }
 input{
     width: 150px;
