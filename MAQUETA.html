@@ -31,6 +31,7 @@
     </header>
     <section class="contenido">
         <form>
+            <h1 class="titulo">Informacion basica</h1>
             <div class="estados">
                 <div class="est">
                     <div>
@@ -93,7 +94,7 @@
                     </div>              
                 </div>
                 <div class="cont">                
-                    <div class="Celular">
+                    <div class="celular">
                         <label>Ingrese telefono celular</label>
                         <input type="tel" required placeholder="Ingrese Celular " pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
                     </div>
@@ -155,7 +156,7 @@
                     </select>
                 </div>
             </div>
-            <div class="identificacion">
+            <div class="id_user">
                 <div class="email">
                     <label>Email</label>
                     <input type="email" required placeholder="Ingrese Correo">   
@@ -164,46 +165,50 @@
                     <label>Contraseña</label>
                     <input type="password" required placeholder="Ingrese Contrseña">    
                 </div>
+                <div class="fto">
+                    <label for="inputTag">
+                      <i class="fa fa-2x fa-camera"></i>
+                      <input class="inputTag" type="file"/><br/>
+                      Seleccione imagen 
+                    </label>
+                  </div>
             </div> 
-            <label>Carge foto</label>            
-            <input type="file" value="Carge foto">
-            <div>
                 <div>
-                    <h1>Contacto de emergencia</h1>
+                    <h1 class="titulo">Contacto de emergencia</h1>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <label>Nombre contacto #1 emergencia</label>
+                <div class="emg">
+                    <div class="dt_emg">
+                        <div class="nomb">
+                            <label>Nombre contacto #1</label>
                             <input type="text" required placeholder="ingrese nombre del contacto de emergencia">
                         </div>
-                        <div class="Celular">
-                            <label>ingrese celular</label>
+                        <div class="celular">
+                            <label>ingrese celular #1</label>
                             <input type="tel" required placeholder="Ingrese Celular " pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
                         </div>
                         <div class="fijo">
-                            <label>ingrese fijo</label>
+                            <label>ingrese fijo #1</label>
                             <input type="tel" placeholder="Ingrese Telefono " pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="7">
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <label>Nombre contacto #2 emergencia</label>
+                    <div class="dt_emg">
+                        <div class="nomb">
+                            <label>Nombre contacto #2</label>
                             <input type="text" placeholder="ingrese nombre del contacto de emergencia">
                         </div>
-                        <div class="Celular">
-                            <label>ingrese celular</label>
+                        <div class="celular">
+                            <label>ingrese celular #2</label>
                             <input type="tel"  placeholder="Ingrese Celular " pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
                         </div>
                         <div class="fijo">
-                            <label>ingrese fijo</label>
+                            <label>ingrese fijo #2</label>
                             <input type="tel" placeholder="Ingrese Telefono " pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" maxlength="7">
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <h1>Contrato</h1>
+            <h1 class="titulo">Contrato</h1>
+            <div class="acrdo">   
                 <div>
                     <label>Tipo de contrato</label>
                     <select required>
@@ -211,20 +216,21 @@
                         <option>Externo</option>
                     </select>
                 </div>
+                <div class="ds_acrdo">
+                    <textarea name="descripcion del contrato" maxlength="255" placeholder="decribe el contrato"></textarea>
+                </div>
                 <div>
                     <label>adjunte contrato</label>
                     <input type="file" value="Carge foto">
                 </div>
-                <div>
-                    <p>Descripcion: <textarea name="descripcion del contrato"></textarea></p>
-                </div>
             </div>
-            <p><input type="submit" value="Enviar datos"></p>
+            <input class="save" type="submit" value="GUARDAR">
         </form>
     </section>
     <footer>
         <p>todos los derechos reservados 2022</p>
         <a href="#">Contacta con los desarrolladores</a>
     </footer>
+    <script src="https://use.fontawesome.com/3a2eaf6206.js"></script>
 </body>
 </html>

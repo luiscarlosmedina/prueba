@@ -48,6 +48,7 @@ header{
     width: auto;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .est{
@@ -99,16 +100,16 @@ header{
     padding-right: 50px;
 }
 .info_basic >div> input{
-    width: 350px;
+    width: auto;
 }
 .info_ubi{
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: flex-start;
     padding: 10px;
 }
 .resid{
-    padding-right: 75px;
     display: flex;
     flex-direction: column;
 }
@@ -124,14 +125,17 @@ header{
 }
 .cont{
     display: flex;
+    flex-wrap: wrap;
 }
-.cont > div{
+.celular, .fijo{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .data_import{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content:flex-start;
     padding: 10px;
 }
@@ -143,6 +147,7 @@ header{
 .prestacion{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     padding-right: 40px;
@@ -150,6 +155,67 @@ header{
 .prestacion>div{
     display: flex;
     flex-direction: column;
+}
+.id_user{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+.email, .paswd{
+    display: flex;
+    flex-direction: column;
+}
+.email>input , .paswd>input{
+    width: auto;
+    padding-right: 50px;
+}
+.fto{
+    text-align:center;
+    border-radius: 50%;
+}
+.inputTag{
+    display: none;
+}
+.fto>label{
+    cursor:pointer;
+}
+.emg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.dt_emg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.acrdo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.ds_acrdo>textarea{
+    width: 80%;
+    height: 150px;
+}
+.acrdo>div>input{
+    border: none;
+    padding: 0px;
+}
+.save{
+    font-size: 18px;
+    padding: 10PX;
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+.titulo{
+    padding: 30px;
+    font-size: 20px;
 }
 select{
     margin: 3px;
